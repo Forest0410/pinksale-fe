@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "./assets/scss/style.scss";
+@import "./assets/scss/color.scss";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: black;
+  overflow-x: hidden;
+}
+.page-body-wrapper {
+  display: flex;
+  margin-left: 260px;
+  background-color: #faf9fa;
+}
+.page-body {
+  width: 100%;
+}

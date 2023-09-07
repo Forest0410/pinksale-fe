@@ -1,0 +1,18 @@
+.containcer-fluid {
+  min-height: 80vh;
+  width: 100%;  
+  padding: 40px 20px 20px;
+  transition: all 200ms linear 0s;
+}
+.hero {
+  padding-top: 60px;
+  text-align: center;
+  h1 {
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.3rem;
+    max-width: 70%;
+    margin: 50px auto;
+  }
+}

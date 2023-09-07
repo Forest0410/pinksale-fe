@@ -1,0 +1,566 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_presaleGenerator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_factoryAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_WETH",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_presalelockforwarder",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "BUYERS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "baseDeposited",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokensOwed",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "B_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CONTRACT_VERSION",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRESALE_FEE_INFO",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "PINK_BASE_FEE",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "PINK_TOKEN_FEE",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "BASE_FEE_ADDRESS",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "TOKEN_FEE_ADDRESS",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRESALE_GENERATOR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRESALE_INFO",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "TOKEN_PRICE",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "MAX_SPEND_PER_BUYER",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "AMOUNT",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "HARDCAP",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "SOFTCAP",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "LIQUIDITY_PERCENT",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "LISTING_RATE",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "START_BLOCK",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "END_BLOCK",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "LOCK_PERIOD",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "autoList",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "PRESALE_IN_ETH",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRESALE_LOCK_FORWARDER",
+    "outputs": [
+      {
+        "internalType": "contract IPresaleLockForwarder",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRESALE_OWNER",
+    "outputs": [
+      {
+        "internalType": "address payable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STATUS",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "WHITELIST_ONLY",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "LP_GENERATION_COMPLETE",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "FORCE_FAILED",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "TOTAL_BASE_COLLECTED",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "TOTAL_TOKENS_SOLD",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "TOTAL_TOKENS_WITHDRAWN",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "TOTAL_BASE_WITHDRAWN",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ROUND1_LENGTH",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "NUM_BUYERS",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "S_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UNI_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV2Factory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "contract IWETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cancelPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_users",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_add",
+        "type": "bool"
+      }
+    ],
+    "name": "editWhitelist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizePool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "forceFailIfPairExists",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserWhitelistStatus",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWhitelistedUserAtIndex",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWhitelistedUsersLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenAddresses",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "initialInfos",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "tokenFlags",
+        "type": "bool[]"
+      },
+      {
+        "internalType": "address payable",
+        "name": "feeAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "presaleStatus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "returnType",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_flag",
+        "type": "bool"
+      }
+    ],
+    "name": "setWhitelistFlag",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maxSpend",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateMaxSpendLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "userDeposit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "userWithdrawBaseTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "userWithdrawBaseTokensEmergency",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "userWithdrawTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

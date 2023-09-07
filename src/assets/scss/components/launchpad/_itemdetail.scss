@@ -1,0 +1,111 @@
+.launchpad {
+    margin-top: 70px;
+    align-self: center;
+    max-width: 90%;
+    // background-color: white;
+    text-align: left;
+    padding: 20px;
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .logo {
+            width: 60px;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .ownerkey {
+            margin-left: 15px;
+            background-color: #ffdd57;
+            padding: 1px 8px;
+            border-radius: 3px;
+        }
+        .editbutton {
+            margin-left: 7px;
+        }
+        .statuslive{
+            margin-left: auto;
+            order: 2;
+            background: greenyellow;
+            padding: 2px 6px;
+            border-radius: 25px;
+        }
+        .statusnotlive{
+            margin-left: auto;
+            order: 2;
+            background: #ffeaef;
+            padding: 2px 6px;
+            border-radius: 25px;
+        }
+        .headerBody{
+            margin-left: 15px;
+            margin-top: 12px;
+        }
+        .socialIcons{
+            display: flex;
+            margin-top: 5px;
+        }
+        .socialIcon {
+            font-size: 20px;
+            margin-right: 14px;
+            color: #f95192;
+        }
+    }
+    .mainbody{
+        margin-top: 30px;
+        width: 100%;
+        a {
+            text-decoration: none;
+            color: #f95192;
+        }
+    }
+    .clock {
+        text-align: center;
+    }
+    .countdown-section {
+        padding: 0.5rem;
+        background-color: #ffdd57;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    .processbar {
+        margin-top: 15px;
+        .progress {
+            height: 16px;
+            border-radius: 10px;
+        }
+    }
+    .buytoken {
+        margin-top: 15px;
+        text-align: -webkit-center;
+    }
+    .saletype {
+        display: flex;
+    }
+    .whitelistbuttons {
+        margin-top: 15px;
+    }
+    .emergency {
+        text-align: center;
+    }
+    .zonebody {
+        margin-top: 20px;
+        .whitelistbuttons {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .controlpool {
+        text-align: center;
+    }
+}
+.feeoption {
+    padding: 8px 30px;
+    border-radius: 2px;
+    background-color: rgb(130, 216, 130);
+    margin-bottom: 20px;
+}

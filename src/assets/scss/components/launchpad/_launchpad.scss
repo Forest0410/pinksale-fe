@@ -1,0 +1,81 @@
+.launchpad{
+    max-width: 90%;
+    margin-left: 5%;
+    height: 84vh;
+}
+.cardBody {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px #e3e1e1 solid;
+    .logo {
+        width: 70px;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .status{
+        background-color: #fdfaea;
+        text-align: center;
+        color: #d29813;
+        border-radius: 20px;
+        padding: 1px 10px;
+        margin-bottom: 5px;
+    }
+    .audit {
+        display: flex;
+        .safu{
+            background-color: rgb(223, 95, 248);
+            padding: 1px 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin-right: 10px;
+        }
+        .audit{
+            background-color: rgb(0, 188, 212);
+            padding: 1px 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            color: #fff;
+            margin-right: 10px;
+        }
+        .kyc{
+            background-color: #48c774;
+            padding: 1px 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+    .TokenName{
+        margin-top: 15px;
+        font-size: 20px;
+        color: #000;
+    }
+    .softcapTitle{
+        margin-top: 20px;
+    }
+    .softcapamount{
+        font-size: 19px;
+        color: #f95192;
+    }
+    .processName{
+        margin-top: 10px;
+    }
+    .progressbar{
+        margin-top: 5px;
+        .progress {
+            height: 12px;
+            border-radius: 10px;
+        }
+    }
+    .liquidity{
+        margin-top: 15px;
+    }
+    .menufooter{
+        display: flex;
+    }
+}

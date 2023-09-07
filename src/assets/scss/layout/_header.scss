@@ -1,0 +1,103 @@
+.bg-light {
+    background-color: transparent !important;
+}
+.changeNetwork{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.networkbtngrid {
+    padding: 5px;
+}
+.networkbutton {
+    background-color: #f3cfdc;
+    border-radius: 10px;
+    padding: 12px 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid #da3f77;
+    }
+}
+@media(max-width:575px) {
+
+    .hidden-xs-down,
+    .hidden-sm-down,
+    .hidden-md-down,
+    .hidden-lg-down,
+    .hidden-xl-down,
+    .hidden-xs-up,
+    .hidden-unless-sm,
+    .hidden-unless-md,
+    .hidden-unless-lg,
+    .hidden-unless-xl {
+        display: none !important
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+
+    .hidden-sm-down,
+    .hidden-md-down,
+    .hidden-lg-down,
+    .hidden-xl-down,
+    .hidden-xs-up,
+    .hidden-sm-up,
+    .hidden-unless-xs,
+    .hidden-unless-md,
+    .hidden-unless-lg,
+    .hidden-unless-xl {
+        display: none !important
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .hidden-md-down,
+    .hidden-lg-down,
+    .hidden-xl-down,
+    .hidden-xs-up,
+    .hidden-sm-up,
+    .hidden-md-up,
+    .hidden-unless-xs,
+    .hidden-unless-sm,
+    .hidden-unless-lg,
+    .hidden-unless-xl {
+        display: none !important
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+
+    .hidden-lg-down,
+    .hidden-xl-down,
+    .hidden-xs-up,
+    .hidden-sm-up,
+    .hidden-md-up,
+    .hidden-lg-up,
+    .hidden-unless-xs,
+    .hidden-unless-sm,
+    .hidden-unless-md,
+    .hidden-unless-xl {
+        display: none !important
+    }
+}
+
+@media(min-width:1200px) {
+
+    .hidden-xl-down,
+    .hidden-xs-up,
+    .hidden-sm-up,
+    .hidden-md-up,
+    .hidden-lg-up,
+    .hidden-xl-up,
+    .hidden-unless-xs,
+    .hidden-unless-sm,
+    .hidden-unless-md,
+    .hidden-unless-lg {
+        display: none !important
+    }
+}

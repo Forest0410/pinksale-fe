@@ -1,0 +1,69 @@
+.Nav {
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.SidebarNav {
+  //   background: #15171c;
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  //   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  transition: 350ms;
+  z-index: 10;
+}
+.NavIcon {
+  margin-left: 2rem;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.SidebarWrap {
+  width: 100%;
+  margin-top: 90px;
+  border-right: 1px solid #ede8ee;
+}
+
+.SidebarLink {
+  display: flex;
+  color: #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+
+  &:hover, &:focus {
+    background: #cdc5cf;
+    color: #e60dc9;
+    border-left: 4px solid #e60dc9;
+    cursor: pointer;
+  }
+}
+.SidebarLabel {
+  margin-left: 16px;
+}
+.DropdownLink {
+  height: 60px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+
+  &:hover , &:focus-visible, ::after{
+    background: #cdc5cf;
+    color: #e60dc9;
+    border-left: 4px solid #e60dc9;
+    cursor: pointer;
+  }
+}
